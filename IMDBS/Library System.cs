@@ -74,7 +74,7 @@ namespace IMDBS
 
             if (dr == DialogResult.Yes)
             {
-               OleDbCommand com = new OleDbCommand("DELETE FROM book WHERE accession_numer = '" + txtNo.Text + "' ", con);
+               OleDbCommand com = new OleDbCommand("DELETE FROM book WHERE accession_number = '" + txtNo.Text + "' ", con);
                com.ExecuteNonQuery();
                MessageBox.Show("Successfully DELETED!", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                clearTextField();

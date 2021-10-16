@@ -107,7 +107,7 @@ namespace IMDBS
          // 
          this.txtSearch.Location = new System.Drawing.Point(112, 212);
          this.txtSearch.Name = "txtSearch";
-         this.txtSearch.Size = new System.Drawing.Size(100, 20);
+         this.txtSearch.Size = new System.Drawing.Size(139, 20);
          this.txtSearch.TabIndex = 7;
          this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
          // 
