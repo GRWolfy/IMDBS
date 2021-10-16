@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.OleDb;
 using System.Windows.Forms;
 
@@ -44,7 +38,7 @@ namespace IMDBS
          }
 
          catch (Exception ex)
-         { 
+         {
             MessageBox.Show(ex.Message);
          }
       }
@@ -80,7 +74,7 @@ namespace IMDBS
 
             if (dr == DialogResult.Yes)
             {
-               OleDbCommand com = new OleDbCommand("DELETE FROM book WHERE accession_numer = '"+ txtNo.Text +"' ", con);
+               OleDbCommand com = new OleDbCommand("DELETE FROM book WHERE accession_numer = '" + txtNo.Text + "' ", con);
                com.ExecuteNonQuery();
                MessageBox.Show("Successfully DELETED!", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                clearTextField();
