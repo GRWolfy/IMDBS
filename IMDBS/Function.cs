@@ -11,10 +11,10 @@ namespace IMDBS
 {
    public class Function
    {
-      /*public static string gen = "";
-      public static SqlConnection con;
-      public static SqlCommand command;
-      public static SqlDataReader reader;
+      public static string gen = "";
+      public static OleDbConnection con;
+      public static OleDbCommand command;
+      public static OleDbDataReader reader;
 
       public static void fill(string q, DataGridView dgv) // gen(query), datagrid
       {
@@ -22,9 +22,9 @@ namespace IMDBS
          {
             Connection.DB();
             DataTable dt = new DataTable();
-            SqlDataAdapter data = null;
-            SqlCommand command = new SqlCommand(q, Connection.con);
-            data = new SqlDataAdapter(command);
+            OleDbDataAdapter data = null;
+            OleDbCommand command = new OleDbCommand(q, Connection.con);
+            data = new OleDbDataAdapter(command);
             data.Fill(dt);
             dgv.DataSource = dt;
             Connection.con.Close();
@@ -33,6 +33,6 @@ namespace IMDBS
          {
             MessageBox.Show(e.Message);
          }
-      }*/
+      }
    }
 }

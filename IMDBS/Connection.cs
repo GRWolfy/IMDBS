@@ -7,22 +7,21 @@ namespace IMDBS
 {
    public class Connection
    {
-      /*public static OleDbCommand con;
-      private static var path = Application.StartupPath + "";
-      private static string dbconnect = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source="'D:\\Programming\NET Core\IMDBS\LibSysdb.mdb""; //connection string 
+      public static OleDbConnection con;
+      private static string dbconnect = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\Programming\\NET Core\\IMDBS\\LibSysdb.mdb"; //connection string 
 
       public static void DB()
       {
          try
          {
-            con = new OleDbCommand(dbconnect);
-            con.();
+            con = new OleDbConnection(dbconnect);
+            con.Open();
          }
          catch (Exception e)
          {
             con.Close();
             MessageBox.Show(e.Message);
          }
-      }*/
+      }
    }
 }
